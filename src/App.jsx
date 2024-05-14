@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Logo from "./images/logo.png"
 import BagIcon from "./images/bag-icon.png"
 import Fb from "./images/fb-icon.png"
@@ -20,20 +19,19 @@ import "./css/style.css"
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div class="header_section">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="logo">
-              <a href="index.html">
+      <div className="header_section">
+        <div className="container-fluid">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="logo">
+              {/* <a href="index.html"> */}
                 <img src={Logo} />
-              </a>
+              {/* </a> */}
             </div>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
@@ -41,45 +39,45 @@ function App() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                  <a className="nav-link">
                     Home
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">
+                <li className="nav-item">
+                  <a className="nav-link" >
                     About
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Products.html">
+                <li className="nav-item">
+                  <a className="nav-link" href="Products.html">
                     Products
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">
+                <li className="nav-item">
+                  <a className="nav-link" href="blog.html">
                     Blog
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">
+                <li className="nav-item">
+                  <a className="nav-link" href="contact.html">
                     Contact us
                   </a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
+              <form className="form-inline my-2 my-lg-0">
                 <button
-                  class="btn btn-outline-success my-2 my-sm-0"
+                  className="btn btn-outline-success my-2 my-sm-0"
                   type="submit"
                 >
                   GET STARTED
                 </button>
               </form>
-              <div class="search_icon">
+              <div className="search_icon">
                 <ul>
                   <li>
                     <a href="#">
@@ -101,77 +99,77 @@ function App() {
             </div>
           </nav>
         </div>
-        <div class="banner_section layout_padding">
-          <div class="container">
-            <div id="main_slider" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h1 class="your_text">Your Favorite</h1>
-                      <h1 class="Shows_text">Shows And Movies</h1>
-                      <p class="there_text">
+        <div className="banner_section layout_padding">
+          <div className="container">
+            <div id="main_slider" className="carousel slide" data-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h1 className="your_text">Your Favorite</h1>
+                      <h1 className="Shows_text">Shows And Movies</h1>
+                      <p className="there_text">
                         There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in
                         some form, by injected humour, or
                       </p>
-                      <div class="start_bt">
+                      <div className="start_bt">
                         <a href="#">Start Now</a>
                       </div>
-                      <div class="read_bt">
+                      <div className="read_bt">
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="images_1">
+                    <div className="col-md-6">
+                      <div className="images_1">
                         <img src={Img1} />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h1 class="your_text">Your Favorite</h1>
-                      <h1 class="Shows_text">Shows And Movies</h1>
-                      <p class="there_text">
+                <div className="carousel-item">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h1 className="your_text">Your Favorite</h1>
+                      <h1 className="Shows_text">Shows And Movies</h1>
+                      <p className="there_text">
                         There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in
                         some form, by injected humour, or
                       </p>
-                      <div class="start_bt">
+                      <div className="start_bt">
                         <a href="#">Start Now</a>
                       </div>
-                      <div class="read_bt">
+                      <div className="read_bt">
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="images_1">
+                    <div className="col-md-6">
+                      <div className="images_1">
                         <img src={Img1} />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h1 class="your_text">Your Favorite</h1>
-                      <h1 class="Shows_text">Shows And Movies</h1>
-                      <p class="there_text">
+                <div className="carousel-item">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <h1 className="your_text">Your Favorite</h1>
+                      <h1 className="Shows_text">Shows And Movies</h1>
+                      <p className="there_text">
                         There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in
                         some form, by injected humour, or
                       </p>
-                      <div class="start_bt">
+                      <div className="start_bt">
                         <a href="#">Start Now</a>
                       </div>
-                      <div class="read_bt">
+                      <div className="read_bt">
                         <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="images_1">
+                    <div className="col-md-6">
+                      <div className="images_1">
                         <img src={Img1} />
                       </div>
                     </div>
@@ -179,55 +177,55 @@ function App() {
                 </div>
               </div>
               <a
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 href="#main_slider"
                 role="button"
                 data-slide="prev"
               >
-                <i class="fa-arrow-left">
+                <i className="fa-arrow-left">
                   <img src={LeftArrow} />
                 </i>
               </a>
               <a
-                class="carousel-control-next"
+                className="carousel-control-next"
                 href="#main_slider"
                 role="button"
                 data-slide="next"
               >
-                <i class="fa-angle-right">
+                <i className="fa-angle-right">
                   <img src={RightArrow} />
                 </i>
               </a>
             </div>
-            <div class="banner_section_2">
-              <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                  <div class="box_main">
-                    <div class="internet_icon"></div>
-                    <h4 class="broadband_text">Broadband</h4>
-                    <p class="many_text">
+            <div className="banner_section_2">
+              <div className="row">
+                <div className="col-lg-4 col-sm-12">
+                  <div className="box_main">
+                    <div className="internet_icon"></div>
+                    <h4 className="broadband_text">Broadband</h4>
+                    <p className="many_text">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, m Ipsum, you need to be
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="box_main active">
-                    <div class="internet_icon1"></div>
-                    <h4 class="broadband_text active">Broadband</h4>
-                    <p class="many_text active">
+                <div className="col-lg-4 col-sm-12">
+                  <div className="box_main active">
+                    <div className="internet_icon1"></div>
+                    <h4 className="broadband_text active">Broadband</h4>
+                    <p className="many_text active">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, m Ipsum, you need to be
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-sm-12">
-                  <div class="box_main">
-                    <div class="internet_icon2"></div>
-                    <h4 class="broadband_text">Broadband</h4>
-                    <p class="many_text">
+                <div className="col-lg-4 col-sm-12">
+                  <div className="box_main">
+                    <div className="internet_icon2"></div>
+                    <h4 className="broadband_text">Broadband</h4>
+                    <p className="many_text">
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
                       some form, m Ipsum, you need to be
@@ -239,32 +237,32 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="about_section layout_padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image_2">
+      <div className="about_section layout_padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="image_2">
                 <img src={Img2} />
               </div>
             </div>
-            <div class="col-md-6">
-              <h1 class="live_text">
+            <div className="col-md-6">
+              <h1 className="live_text">
                 Live Sport and TV-shows for best friends
               </h1>
-              <p class="lorem_text">
+              <p className="lorem_text">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
                 normal distribution of letters,
               </p>
-              <div class="online_bt_main">
-                <div class="online_bt">
+              <div className="online_bt_main">
+                <div className="online_bt">
                   <a href="#">4K Ultra HD Quality</a>
                 </div>
-                <div class="online_bt1">
+                <div className="online_bt1">
                   <a href="#">200+ Online Channels</a>
                 </div>
-                <div class="read_bt1">
+                <div className="read_bt1">
                   <a href="#">Read More</a>
                 </div>
               </div>
@@ -272,61 +270,61 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="product_section layout_padding">
-        <div class="container">
-          <h2 class="tariffs_text">Tariffs</h2>
-          <h1 class="choose_text">Choose your plan</h1>
-          <p class="lorem_text1">
+      <div className="product_section layout_padding">
+        <div className="container">
+          <h2 className="tariffs_text">Tariffs</h2>
+          <h1 className="choose_text">Choose your plan</h1>
+          <p className="lorem_text1">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             bibendum, est ac faucibus hendrerit, mauris ante viverra urna, in
             elementum urna est ut ligula.
           </p>
-          <div class="product_section2">
-            <div class="row">
-              <div class="col-lg-4 col-sm-12">
-                <h2 class="easy_text">Easy Surfing</h2>
-                <h1 class="internet_text">Internet</h1>
-                <div class="month_main clearfix">
-                  <h1 class="dolor_text">$24.99</h1>
-                  <h2 class="month_text">Month</h2>
-                  <p class="long_text">
+          <div className="product_section2">
+            <div className="row">
+              <div className="col-lg-4 col-sm-12">
+                <h2 className="easy_text">Easy Surfing</h2>
+                <h1 className="internet_text">Internet</h1>
+                <div className="month_main clearfix">
+                  <h1 className="dolor_text">$24.99</h1>
+                  <h2 className="month_text">Month</h2>
+                  <p className="long_text">
                     It is a long established f act distracteontent{" "}
                   </p>
                 </div>
-                <div class="seemore_main">
-                  <div class="see_more">
+                <div className="seemore_main">
+                  <div className="see_more">
                     <a href="#">SEE MORE</a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12">
-                <h2 class="easy_text">Impression</h2>
-                <h1 class="internet_text">Tv</h1>
-                <div class="month_main clearfix">
-                  <h1 class="dolor_text">$24.99</h1>
-                  <h2 class="month_text">Month</h2>
-                  <p class="long_text">
+              <div className="col-lg-4 col-sm-12">
+                <h2 className="easy_text">Impression</h2>
+                <h1 className="internet_text">Tv</h1>
+                <div className="month_main clearfix">
+                  <h1 className="dolor_text">$24.99</h1>
+                  <h2 className="month_text">Month</h2>
+                  <p className="long_text">
                     It is a long established f act distracteontent{" "}
                   </p>
                 </div>
-                <div class="seemore_main">
-                  <div class="see_more">
+                <div className="seemore_main">
+                  <div className="see_more">
                     <a href="#">SEE MORE</a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-12">
-                <h2 class="easy_text">Premium Plan</h2>
-                <h1 class="internet_text">Internet + TV + Phone</h1>
-                <div class="month_main clearfix">
-                  <h1 class="dolor_text">$24.99</h1>
-                  <h2 class="month_text">Month</h2>
-                  <p class="long_text">
+              <div className="col-lg-4 col-sm-12">
+                <h2 className="easy_text">Premium Plan</h2>
+                <h1 className="internet_text">Internet + TV + Phone</h1>
+                <div className="month_main clearfix">
+                  <h1 className="dolor_text">$24.99</h1>
+                  <h2 className="month_text">Month</h2>
+                  <p className="long_text">
                     It is a long established f act distracteontent{" "}
                   </p>
                 </div>
-                <div class="seemore_main">
-                  <div class="see_more">
+                <div className="seemore_main">
+                  <div className="see_more">
                     <a href="#">SEE MORE</a>
                   </div>
                 </div>
@@ -335,24 +333,24 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="contact_section layout_padding">
-        <div class="container">
-          <h1 class="check_text">
+      <div className="contact_section layout_padding">
+        <div className="container">
+          <h1 className="check_text">
             Check ability to connect our services in your area
           </h1>
-          <div class="contact_section2">
-            <div class="addres_main">
-              <div class="input_bg">
-                <h3 class="fact_text">
+          <div className="contact_section2">
+            <div className="addres_main">
+              <div className="input_bg">
+                <h3 className="fact_text">
                   It is a long established fact that a reader will be distracted
                 </h3>
                 <input
                   type="text"
-                  class="address_text"
+                  className="address_text"
                   placeholder="Enter your address"
                   name="text"
                 />
-                <button type="button" class="get_bt">
+                <button type="button" className="get_bt">
                   GET STARTED
                 </button>
               </div>
@@ -360,24 +358,24 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="client_section layout_padding">
-        <div class="container">
-          <h1 class="client_taital">What our clients say</h1>
-          <div class="client_section2 layout_padding">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="client_image">
+      <div className="client_section layout_padding">
+        <div className="container">
+          <h1 className="client_taital">What our clients say</h1>
+          <div className="client_section2 layout_padding">
+            <div className="row">
+              <div className="col-sm-4">
+                <div className="client_image">
                   <img src={Img3} />
                 </div>
               </div>
-              <div class="col-sm-8">
-                <div class="miller_text">
+              <div className="col-sm-8">
+                <div className="miller_text">
                   Miller
-                  <span class="quote_icon">
+                  <span className="quote_icon">
                     <img src={Quote} />
                   </span>
                 </div>
-                <p class="ipsum_text">
+                <p className="ipsum_text">
                   ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                   enim ad minim veniam, quis nostrud exercitation ullamco
@@ -392,21 +390,21 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="subscribe_section layout_padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h1 class="subscribe_text">Subscribe Now</h1>
+      <div className="subscribe_section layout_padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-4">
+              <h1 className="subscribe_text">Subscribe Now</h1>
             </div>
-            <div class="col-sm-8">
-              <div class="mail_main">
+            <div className="col-sm-8">
+              <div className="mail_main">
                 <input
                   type="text"
-                  class="address_text1"
+                  className="address_text1"
                   placeholder="Enter your address"
                   name="text"
                 />
-                <button type="button" class="get_bt1">
+                <button type="button" className="get_bt1">
                   GET STARTED
                 </button>
               </div>
@@ -414,29 +412,29 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="footer_section layout_padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <div class="fooer_logo">
+      <div className="footer_section layout_padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-sm-6">
+              <div className="fooer_logo">
                 <img src={Footer} />
               </div>
-              <h1 class="customer_text">CUSTOMER SERVICE</h1>
-              <p class="footer_lorem_text">
+              <h1 className="customer_text">CUSTOMER SERVICE</h1>
+              <p className="footer_lorem_text">
                 There are many variat ions of passages of L orem Ipsum available
                 , but the majority h ave suffered altera tion in some form, by{" "}
               </p>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h1 class="customer_text">LET US HELP YOU</h1>
-              <p class="footer_lorem_text">
+            <div className="col-lg-3 col-sm-6">
+              <h1 className="customer_text">LET US HELP YOU</h1>
+              <p className="footer_lorem_text">
                 There are many variat ions of passages of L orem Ipsum available
                 , but the majority h ave suffered altera tion in some form, by{" "}
               </p>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h1 class="customer_text">INFORMATION</h1>
-              <p class="footer_lorem_text1">
+            <div className="col-lg-3 col-sm-6">
+              <h1 className="customer_text">INFORMATION</h1>
+              <p className="footer_lorem_text1">
                 About Us
                 <br />
                 Careers
@@ -450,13 +448,13 @@ function App() {
                 Terms & Conditions
               </p>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <h1 class="customer_text">OUR SHOP</h1>
-              <p class="footer_lorem_text">
+            <div className="col-lg-3 col-sm-6">
+              <h1 className="customer_text">OUR SHOP</h1>
+              <p className="footer_lorem_text">
                 There are many variat ions of passages of L orem Ipsum available
                 , but the majority h ave suffered altera tion in some form, by{" "}
               </p>
-              <div class="social_icon">
+              <div className="social_icon">
                 <ul>
                   <li>
                     <a href="#">
@@ -484,10 +482,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="copyright_section">
-        <div class="container">
-          <div class="border"></div>
-          <p class="copyright_text">
+      <div className="copyright_section">
+        <div className="container">
+          <div className="border"></div>
+          <p className="copyright_text">
             2020 All Rights Reserved. Design by{" "}
             <a href="https://html.design">Free html Templates</a>
           </p>
