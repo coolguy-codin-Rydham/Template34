@@ -283,6 +283,9 @@ button {
     padding: 0px;
     padding-left: 15px;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 .nav-item.active .nav-link::before {
     background-color: #ef5051;
 }

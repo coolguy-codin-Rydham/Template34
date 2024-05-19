@@ -78,6 +78,10 @@
   -ms-transform-origin: center bottom;
   transform-origin: center bottom;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
 @-webkit-keyframes flash {
   0%,
   50%,
